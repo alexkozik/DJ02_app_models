@@ -19,6 +19,12 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'page2' %}active{% endif %}" href="{% url 'page2' %}"><i class="bi bi-info-circle me-1"></i> Вторая страница</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'page3' %}active{% endif %}" href="{% url 'page3' %}"><i class="bi bi-info-circle me-1"></i> Третья страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'page4' %}active{% endif %}" href="{% url 'page4' %}"><i class="bi bi-info-circle me-1"></i> Четвертая страница</a>
+                    </li>
                 </ul>
 
                 <form class="d-flex ms-auto my-2 my-lg-0">
