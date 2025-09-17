@@ -1,0 +1,55 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    <title>CatDjango - Главная</title>
+{% endblock %}
+
+{% block content%}
+    <!-- Блок с приветствием -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold text-primary">Добро пожаловать в CatDjango!</h1>
+            <p class="lead">Лучшее место для всех любителей кошек и разработчиков Django.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Узнать больше <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        <div class="col-md-6">
+            <img src="https://placekitten.com/600/400" alt="Милый котик" class="img-fluid rounded shadow">
+        </div>
+    </div>
+    <!-- Заглушка контента по умолчанию -->
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h2 class="border-bottom pb-2">Наши особенности</h2>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-speedometer2 display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Высокая производительность</h5>
+                    <p class="card-text">Наш сайт работает на мощном фреймворке Django, обеспечивая быстрый отклик.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-heart display-4 text-danger mb-3"></i>
+                    <h5 class="card-title">Любовь к котикам</h5>
+                    <p class="card-text">Мы обожаем кошек и делимся самой интересной информацией о них.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="bi bi-code-slash display-4 text-success mb-3"></i>
+                    <h5 class="card-title">Современные технологии</h5>
+                    <p class="card-text">Используем Bootstrap 5 для создания адаптивного и красивого дизайна.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
