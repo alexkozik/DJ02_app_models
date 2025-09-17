@@ -1,5 +1,5 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block title %}
     <title>CatDjango - Главная</title>
 {% endblock %}
@@ -8,13 +8,15 @@
     <!-- Блок с приветствием -->
     <div class="row mb-5 align-items-center">
         <div class="col-md-6">
-            <h1 class="display-4 fw-bold text-primary">Добро пожаловать в CatDjango!</h1>
+            <h2 class="display-4 fw-bold text-primary">Добро пожаловать в {{caption}}!</h2>
             <p class="lead">Лучшее место для всех любителей кошек и разработчиков Django.</p>
             <a href="#" class="btn btn-primary btn-lg mt-3">Узнать больше <i class="bi bi-arrow-right ms-2"></i></a>
         </div>
+
         <div class="col-md-6">
-            <img src="https://placekitten.com/600/400" alt="Милый котик" class="img-fluid rounded shadow">
+             <img src="{% static 'main/img/kitten.gif' %}" alt="Милый котик" width="300" height="300">
         </div>
+
     </div>
     <!-- Заглушка контента по умолчанию -->
     <div class="row">
