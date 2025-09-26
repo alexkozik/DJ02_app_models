@@ -25,6 +25,9 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'news_home' %}active{% endif %}" href="{% url 'news_home' %}"><i class="bi bi-info-circle me-1"></i> Новостная страница</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'add_news' %}active{% endif %}" href="{% url 'add_news' %}">Добавить новость</a>
+                    </li>
                 </ul>
 
                 <form class="d-flex ms-auto my-2 my-lg-0">
